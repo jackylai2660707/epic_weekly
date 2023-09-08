@@ -1,14 +1,39 @@
-2023-09-08 07:45:09 | INFO - prelude- {'action': 'Checking the operating environment'}
-2023-09-08 07:45:09 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-09-08 07:45:09 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-09-08 07:45:09 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-09-08 07:45:12 | INFO - execute task- {'name': 'claim_epic_games'}
-2023-09-08 07:45:12 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
-2023-09-08 07:45:14 | SUCCESS - login- {'result': 'token has not expired'}
-2023-09-08 07:45:28 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic_weekly/epic_weekly/epic/user_data_dir/epic-games@jackylai260707/ctx_cookie.json')}
-2023-09-08 07:45:29 | INFO - claim_weekly_games- {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/spelldrifter'}
-2023-09-08 07:45:38 | INFO - claim_weekly_games- {'action': 'move to webPurchaseContainer iframe'}
-2023-09-08 07:46:16 | ERROR - An error has been caught in function '_run', process 'MainProcess' (3526), thread 'MainThread' (140152745483328):- {}
+2023-09-09 07:45:12 | INFO - prelude- {'action': 'Checking the operating environment'}
+2023-09-09 07:45:12 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
+2023-09-09 07:45:13 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
+2023-09-09 07:45:13 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
+2023-09-09 07:45:16 | INFO - execute task- {'name': 'claim_epic_games'}
+2023-09-09 07:45:16 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
+2023-09-09 07:45:20 | SUCCESS - login- {'result': 'token has not expired'}
+2023-09-09 07:45:36 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic_weekly/epic_weekly/epic/user_data_dir/epic-games@jackylai260707/ctx_cookie.json')}
+2023-09-09 07:45:37 | INFO - claim_weekly_games- {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/spelldrifter'}
+2023-09-09 07:45:49 | INFO - claim_weekly_games- {'action': 'move to webPurchaseContainer iframe'}
+2023-09-09 07:45:52 | INFO - claim_weekly_games- {'action': 'click payment button'}
+2023-09-09 07:47:14 | ERROR - An error has been caught in function '_run', process 'MainProcess' (3563), thread 'MainThread' (140056246901632):- {}
+Traceback (most recent call last):
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/models.py", line 113, in execute
+    await container(context)
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 79, in claim_epic_games
+    await epic.claim_weekly_games(page, promotions)
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/agents/epic_games.py", line 213, in claim_weekly_games
+    await page.wait_for_url(URL_CART_SUCCESS)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9408, in wait_for_url
+    await self._impl_obj.wait_for_url(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 503, in wait_for_url
+    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 232, in wait_for_url
+    async with self.expect_navigation(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_event_context_manager.py", line 33, in __aexit__
+    await self._future
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 208, in continuation
+    event = await wait_helper.result()
+playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://store.epicgames.com/en-US/cart/success" until 'load'
+============================================================
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 94, in <module>
     asyncio.run(run())
@@ -24,25 +49,12 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 90, in run
     await agent.execute(sequence=[claim_epic_games], headless=True)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/models.py", line 113, in execute
-    await container(context)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 79, in claim_epic_games
-    await epic.claim_weekly_games(page, promotions)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/agents/epic_games.py", line 196, in claim_weekly_games
-    await payment_btn.click()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 15634, in click
-    await self._impl_obj.click(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_locator.py", line 160, in click
-    return await self._frame.click(self._selector, strict=True, **params)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 489, in click
-    await self._channel.send("click", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 482, in wrap_api_call
-    return await cb()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 97, in inner_send
-    result = next(iter(done)).result()
-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for frame_locator("xpath=//iframe[@class='']").locator("xpath=//div[@class='payment-order-confirm']")
-============================================================
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/models.py", line 89, in execute
+    async with async_playwright() as p:
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_context_manager.py", line 58, in __aexit__
+    await self._connection.stop_async()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 284, in stop_async
+    self.cleanup(error_message)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 295, in cleanup
+    callback.future.set_exception(Error(error_message))
+asyncio.exceptions.InvalidStateError: invalid state
