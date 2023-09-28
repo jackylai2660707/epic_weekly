@@ -1,4 +1,4 @@
-2023-09-23 07:47:12 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3502), thread 'MainThread' (140177020144512): - {}
+2023-09-29 07:48:18 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3513), thread 'MainThread' (140628734159744): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 130, in <module>
     asyncio.run(run())
@@ -14,9 +14,9 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 126, in run
     await agent.stash()
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 121, in stash
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 120, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 104, in claim_epic_games
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 102, in claim_epic_games
     await epic.claim_weekly_games(page, self.promotions)
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/services/agents/epic_games.py", line 180, in claim_weekly_games
     await expect(cta_btn).to_have_text("View In Cart")
