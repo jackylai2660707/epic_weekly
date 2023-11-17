@@ -1,25 +1,52 @@
-2023-09-29 11:19:48 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
-2023-09-29 11:19:53 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-09-29 11:19:53 | INFO    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:137 | Reloading the local cache of Assets - {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-09-29 11:19:53 | DEBUG    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:151 | Pulling Assets index file - {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-09-29 11:19:53 | INFO    | __main__:claim_epic_games:86 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-09-29 11:19:58 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-09-29 11:19:59 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
-2023-09-29 11:20:04 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
-2023-09-29 11:20:09 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'retry'}
-2023-09-29 11:20:13 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/notanimal2310_yolov8s.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/notanimal2310_yolov8s.onnx'}
-2023-09-29 11:20:15 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:389 | catch model - {'yolo': 'notanimal2310_yolov8s.onnx', 'ash': 'please click on the thumbnail that is not an animal default'}
-2023-09-29 11:20:20 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'retry'}
-2023-09-29 11:20:26 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:389 | catch model - {'yolo': 'notanimal2310_yolov8s.onnx', 'ash': 'please click on the thumbnail that is not an animal default'}
-2023-09-29 11:20:29 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:389 | catch model - {'yolo': 'notanimal2310_yolov8s.onnx', 'ash': 'please click on the thumbnail that is not an animal default'}
-2023-09-29 11:20:34 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
-2023-09-29 11:20:39 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
-2023-09-29 11:20:45 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/epic_weekly/epic_weekly/epic/user_data_dir/epic-games@jackylai260707/ctx_cookie.json')}
-2023-09-29 11:20:46 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Model Builder', 'url': 'https://store.epicgames.com/en-US/p/model-builder-f9b456'}
-2023-09-29 11:20:46 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Soulstice', 'url': 'https://store.epicgames.com/en-US/p/soulstice'}
-2023-09-29 11:20:46 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/model-builder-f9b456'}
-2023-09-29 11:20:53 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/soulstice'}
-2023-09-29 11:21:04 | INFO    | services.agents.epic_games:claim_weekly_games:199 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-09-29 11:21:07 | INFO    | services.agents.epic_games:claim_weekly_games:206 | claim_weekly_games - {'action': 'click payment button'}
-2023-09-29 11:21:51 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:389 | catch model - {'yolo': 'notanimal2310_yolov8s.onnx', 'ash': 'please click on the thumbnail that is not an animal default'}
-2023-09-29 11:21:55 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:389 | catch model - {'yolo': 'notanimal2310_yolov8s.onnx', 'ash': 'please click on the thumbnail that is not an animal default'}
+2023-11-17 09:00:03 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-17 09:00:12 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-17 09:00:15 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 09:00:19 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 09:00:20 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:00:29 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:00:34 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:00:44 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:00:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:01:03 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:01:15 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:01:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_challenge_clip:629 | unsupervised - {'type': 'binary', 'candidate_labels': ['This is a picture that looks like images of one type that appear colder in comparison to other.', "This is a picture that don't look like images of one type that appear colder in comparison to other."], 'prompt': 'Please select all images of one type that appear colder in comparison to other images', 'timit': '0.816s'}
+2023-11-17 09:01:37 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:01:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:01:48 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 09:02:18 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-17 09:02:21 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 09:02:25 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 09:02:25 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_squirrel2310.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:02:35 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-11-17 09:02:43 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:466 | catch model - {'yolo': 'observation_wheel_2309_yolov8n.onnx', 'ash': 'please click in the center of an observation wheel default'}
+2023-11-17 09:02:45 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:466 | catch model - {'yolo': 'observation_wheel_2309_yolov8n.onnx', 'ash': 'please click in the center of an observation wheel default'}
+2023-11-17 09:02:49 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 09:03:19 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-17 09:03:21 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-17 09:03:25 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-17 09:03:25 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-17 09:03:32 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-17 09:04:02 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-17 09:04:02 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (4456), thread 'MainThread' (140075327609728): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 171, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 167, in run
+    await agent.stash()
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 160, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 97, in claim_epic_games
+    if await epic.authorize(page):
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/epic_games/agent.py", line 261, in authorize
+    raise RuntimeError(f"Failed to flush token - agent={self.__class__.__name__}")
+RuntimeError: Failed to flush token - agent=EpicGames
