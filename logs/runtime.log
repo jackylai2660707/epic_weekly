@@ -1,25 +1,18 @@
-2023-11-19 06:25:38 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-19 06:25:45 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-11-19 06:25:47 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 06:25:51 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 06:25:52 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_smallest_lion2309.onnx', 'prompt': 'Please click on each image containing the smallest animal in real life'}
-2023-11-19 06:26:00 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
-2023-11-19 06:26:03 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_smallest_lion2309.onnx', 'prompt': 'Please click on each image containing the smallest animal in real life'}
-2023-11-19 06:26:13 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
-2023-11-19 06:26:18 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_colder_living_room2309.onnx', 'prompt': 'Please select all images of one type that appear colder in comparison to other images'}
-2023-11-19 06:26:27 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
-2023-11-19 06:26:57 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2023-11-19 06:26:59 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 06:27:03 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 06:27:04 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-19 06:27:35 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2023-11-19 06:27:36 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-11-19 06:27:40 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-11-19 06:27:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_smallest_lion2309.onnx', 'prompt': 'Please click on each image containing the smallest animal in real life'}
-2023-11-19 06:27:48 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
-2023-11-19 06:27:51 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
-2023-11-19 06:28:22 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2023-11-19 06:28:22 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3769), thread 'MainThread' (139726625704832): - {}
+2023-11-20 06:25:45 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-20 06:25:51 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-20 06:25:53 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 06:25:57 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 06:25:58 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 06:26:29 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-20 06:26:31 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 06:26:35 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 06:26:35 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 06:27:06 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-20 06:27:08 | INFO    | epic_games.agent:_login:229 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-20 06:27:12 | DEBUG    | epic_games.agent:insert_challenge:207 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-20 06:27:13 | DEBUG    | epic_games.agent:insert_challenge:210 | Parse result - {'stage': 'email_exists_prod', 'result': 'backcall'}
+2023-11-20 06:27:44 | WARNING    | epic_games.agent:authorize:258 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-20 06:27:44 | ERROR    | __main__:run:167 | An error has been caught in function 'run', process 'MainProcess' (3798), thread 'MainThread' (140469642324864): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 171, in <module>
     asyncio.run(run())
