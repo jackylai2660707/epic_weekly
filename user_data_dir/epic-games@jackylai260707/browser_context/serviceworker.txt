@@ -11,3 +11,15 @@ true
 1
 true
 #
+
+https://www.epicgames.com/account/
+https://www.epicgames.com/account/epic-service-worker.js
+true
+{510d7d4b-5b29-4715-a21e-84cb8e97922d}
+0
+1700778447132054
+1700778447247822
+1700778446578823
+0
+true
+#
