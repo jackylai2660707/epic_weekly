@@ -1,10 +1,5 @@
-2024-01-24 06:29:54 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-24 06:30:01 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-01-24 06:30:02 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'LOVE', 'url': 'https://store.epicgames.com/en-US/p/love-65c4d0'}
-2024-01-24 06:30:07 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/love-65c4d0'}
-2024-01-24 06:30:17 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-01-24 06:30:19 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-01-24 06:30:24 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3573), thread 'MainThread' (140390279887744): - {}
+2024-01-25 06:29:11 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-25 06:29:43 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3615), thread 'MainThread' (140003808541568): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -20,44 +15,20 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 158, in run
     await agent.stash()
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 151, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 122, in claim_epic_games
-    await epic.claim_weekly_games(page, single_promotions)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 88, in async_wrapped
-    return await fn(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 47, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
-    return self.__get_result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 50, in __call__
-    result = await fn(*args, **kwargs)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/epic_games/agent.py", line 335, in claim_weekly_games
-    await self.handle.insert_challenge(self._solver, page, wpc, payment_btn, recur_url, is_uk)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 88, in async_wrapped
-    return await fn(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 47, in __call__
-    do = self.iter(retry_state=retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
-    return self.__get_result()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 50, in __call__
-    result = await fn(*args, **kwargs)
-  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/epic_games/agent.py", line 105, in insert_challenge
-    response = await solver.execute(window="free")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 626, in execute
-    self._parse_label()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 240, in _parse_label
-    self.label = handle(self.prompt)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/components/prompt_handler.py", line 100, in handle
-    return split_prompt_message(label_cleaning(x), "en")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/components/prompt_handler.py", line 57, in split_prompt_message
-    return re.split(r"all (.*) images", prompt_message)[1].strip()
-IndexError: list index out of range
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 149, in stash
+    if not await self.prelude_with_context(context):
+  File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 73, in prelude_with_context
+    await page.goto(url, wait_until="networkidle")
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9275, in goto
+    await self._impl_obj.goto(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 484, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 149, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 495, in wrap_api_call
+    return await cb()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
