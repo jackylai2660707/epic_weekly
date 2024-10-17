@@ -1,12 +1,12 @@
-2024-10-17 06:33:38 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-10-17 06:33:47 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
-2024-10-17 06:33:50 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=BZ2jSr.E7zSzLLSv6OfHvY1C8GQNzeeBUus3wYxJyhE-1729118030-1.0.1.1-yvv3m7AQEgu_5A336scuTUtzvjyZ4IQuwhFU8oobu.Q'}
-2024-10-17 06:34:20 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2024-10-17 06:34:23 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=kaQrD3DSiD9FSbCWs2x4xz5gY2DBo2yxvmx1qrgUcTI-1729118062-1.0.1.1-UZDJUjlqJfNLGeKpWm.SxqsyrYqyQhm084C1zduhltI'}
-2024-10-17 06:34:53 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2024-10-17 06:34:55 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=4RM7Zm2.wcakvUANgZNImnxMnY1Dz4BMtOOkvpj1OaE-1729118095-1.0.1.1-iPf1BWkPFuJSsOOISKXkRTg0Ec1zkI75OFYBf6DRdM0'}
-2024-10-17 06:35:25 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2024-10-17 06:35:25 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3694), thread 'MainThread' (140059861339008): - {}
+2024-10-18 06:33:54 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-10-18 06:34:04 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2024-10-18 06:34:06 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=vn9al_qkiet8zSXfXbBt1exWYbYfuJFyfPArWMY9c9U-1729204446-1.0.1.1-3l9CgSRVy71UEvrFPsi4lRPBJkgoPlgWvu._FMP1LYc'}
+2024-10-18 06:34:36 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2024-10-18 06:34:39 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=r7TA.R0d7wnBSCsesnKg0Fh7mnTW1deTxpx.19QsHMQ-1729204479-1.0.1.1-dK2G6gF3enQtO6maMcPMyjEFo3z9F1cVbvD_dcMOjgw'}
+2024-10-18 06:35:09 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2024-10-18 06:35:11 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=_yuWCgCtRfZ4vUNb45TnywxaAF1APU_SZSVFOyN3RvA-1729204511-1.0.1.1-9L8MEgKcZQVAzLH0ENHOasSd8aH6in2p9lHeCHoszIY'}
+2024-10-18 06:35:41 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2024-10-18 06:35:41 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3730), thread 'MainThread' (139739199867776): - {}
 Traceback (most recent call last):
   File "/home/runner/work/epic_weekly/epic_weekly/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
